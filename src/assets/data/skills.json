@@ -1,0 +1,74 @@
+[
+  {
+    "skillId": 1,
+    "skillName": "Spoken English Practice",
+    "providerName": "Sara Hossain",
+    "providerEmail": "sara@skillswap.com",
+    "price": 15,
+    "rating": 4.7,
+    "slotsAvailable": 5,
+    "description": "Enhance your English fluency and confidence through daily interactive sessions. Ideal for students and professionals who want to improve speaking skills.",
+    "image": "https://i.ibb.co.com/C324RQXm/spoken-English.png",
+    "category": "Language"
+  },
+  {
+    "skillId": 2,
+    "skillName": "Coding Help",
+    "providerName": "Rajiv Khan",
+    "providerEmail": "rajiv@skillswap.com",
+    "price": 30,
+    "rating": 4.9,
+    "slotsAvailable": 3,
+    "description": "Get personalized guidance in web development, JavaScript, and React. Perfect for beginners or anyone struggling with coding logic.",
+    "image": "https://i.ibb.co.com/B534W5fT/coading.png",
+    "category": "Technology"
+  },
+  {
+    "skillId": 3,
+    "skillName": "Quran Sikkha",
+    "providerName": "Maulana Asif Rahman",
+    "providerEmail": "asif@skillswap.com",
+    "price": 10,
+    "rating": 4.8,
+    "slotsAvailable": 6,
+    "description": "Learn to recite the Holy Quran with proper tajweed and pronunciation. Suitable for children and adults alike.",
+    "image": "https://i.ibb.co.com/WvfTCxrL/Quran.png",
+    "category": "Religious Studies"
+  },
+  {
+    "skillId": 4,
+    "skillName": "Cyber Security Basics",
+    "providerName": "Nadia Rahman",
+    "providerEmail": "nadia@skillswap.com",
+    "price": 25,
+    "rating": 4.6,
+    "slotsAvailable": 4,
+    "description": "Understand online safety, data protection, and ethical hacking basics to secure your digital presence.",
+    "image": "https://i.ibb.co.com/bMBxF9jf/cyber-Security.jpg",
+    "category": "Technology"
+  },
+  {
+    "skillId": 5,
+    "skillName": "Computer Servicing",
+    "providerName": "Hasib Mahmud",
+    "providerEmail": "hasib@skillswap.com",
+    "price": 20,
+    "rating": 4.7,
+    "slotsAvailable": 5,
+    "description": "Learn how to troubleshoot and repair basic computer hardware and software problems efficiently.",
+    "image": "https://i.ibb.co.com/prXnW1SJ/computerservice.png",
+    "category": "Technical"
+  },
+  {
+    "skillId": 6,
+    "skillName": "Yoga Training",
+    "providerName": "Maria Garcia",
+    "providerEmail": "maria@skillswap.com",
+    "price": 25,
+    "rating": 4.6,
+    "slotsAvailable": 5,
+    "description": "Relax your mind and body with guided yoga sessions focusing on posture, breathing, and flexibility.",
+    "image": "https://i.ibb.co.com/d4bbwzMH/yoga.jpg",
+    "category": "Health & Fitness"
+  }
+]

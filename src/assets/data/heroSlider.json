@@ -1,0 +1,27 @@
+[
+  {
+    "id": 1,
+    "title": "Learn. Share. Grow.",
+    "subtitle": "Exchange your skills with others in your community.",
+    "image": "https://i.ibb.co.com/My9dd5LB/hero-Slider1.png",
+    "buttonText": "Explore Skills",
+    "buttonLink": "/"
+  },
+  {
+    "id": 2,
+    "title": "Teach What You Love",
+    "subtitle": "Become a local instructor and inspire others through your talent.",
+    "image": "https://i.ibb.co.com/tFrmqqM/hero-Slider2.png",
+    "buttonText": "Become a Provider",
+    "buttonLink": "/signup"
+  },
+  {
+    "id": 3,
+    "title": "Find Your Perfect Mentor",
+    "subtitle": "From coding to cooking — connect with the best around you.",
+    "image": "https://i.ibb.co.com/kg82t8wq/hero-Slider3.png",
+    "buttonText": "Join Now",
+    "buttonLink": "/login"
+  }
+]
+
