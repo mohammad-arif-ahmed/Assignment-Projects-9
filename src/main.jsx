@@ -1,4 +1,3 @@
-// src/main.jsx
 
 import React from 'react';
 import ReactDOM from 'react-dom/client';
@@ -6,13 +5,16 @@ import './index.css';
 import { RouterProvider } from 'react-router-dom';
 import router from './routes/Routes.jsx';
 import AuthProvider from './providers/AuthProvider.jsx';
-import { Toaster } from 'react-hot-toast'; // Toaster ইমপোর্ট করুন
+import { Toaster } from 'react-hot-toast'; 
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <AuthProvider> {/* AuthProvider দিয়ে মুড়ে দিন */}
+    <AuthProvider> 
       <RouterProvider router={router} />
     </AuthProvider>
-    <Toaster /> {/* Global Toast Container */}
+    <Toaster 
+        position="top-right" 
+        reverseOrder={false}
+    />{/* Global Toast Container */}
   </React.StrictMode>,
 );
