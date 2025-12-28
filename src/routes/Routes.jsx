@@ -5,6 +5,10 @@ import Home from "../pages/Home";
 import Login from "../pages/Login";
 import Signup from "../pages/Signup";
 import ErrorPage from "../pages/ErrorPage"; 
+import SkillDetails from "../pages/SkillDetails"; 
+import MyProfile from "../pages/MyProfile"; 
+
+import PrivateRoute from "./PrivateRoute";
 
 const router = createBrowserRouter([
     {
@@ -23,6 +27,18 @@ const router = createBrowserRouter([
             {
                 path: "/signup",
                 element: <Signup />
+            },
+            
+            // ✅ Protected Route for Skill Details
+            {
+                path: "/skill-details/:id",
+                element: <PrivateRoute><SkillDetails /></PrivateRoute> 
+            },
+            
+            // ✅ Protected Route for My Profile
+            {
+                path: "/my-profile",
+                element: <PrivateRoute><MyProfile /></PrivateRoute> 
             }
         ]
     },

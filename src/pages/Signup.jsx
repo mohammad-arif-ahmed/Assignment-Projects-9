@@ -10,7 +10,7 @@ const Signup = () => {
     const navigate = useNavigate();
     const [passwordError, setPasswordError] = useState('');
     const [showPassword, setShowPassword] = useState(false); 
-    const [emailValue, setEmailValue] = useState(''); // Email স্টেট
+    const [emailValue, setEmailValue] = useState(''); 
 
     const validatePassword = (password) => {
         if (password.length < 6) {

@@ -1,14 +1,16 @@
-// src/components/Navbar.jsx
 
 import { Link, NavLink } from "react-router-dom";
 import { useContext, useState } from "react";
 import { AuthContext } from "../providers/AuthProvider"; 
 import toast from "react-hot-toast"; 
 import { FaBars, FaTimes } from 'react-icons/fa'; 
+import siteLogo from '../assets/logo.png'; 
 
 const Navbar = () => {
     const { user, logOut, loading } = useContext(AuthContext); 
     const [isOpen, setIsOpen] = useState(false); 
+
+    const defaultAvatar = 'https://i.ibb.co/3k5f50y/default-avatar.png';
 
     const handleLogOut = () => {
         logOut()
@@ -21,7 +23,6 @@ const Navbar = () => {
             });
     };
 
-    // NavLink এর জন্য কমন লিস্ট
     const navLinks = (
         <>
             <li><NavLink 
@@ -45,6 +46,7 @@ const Navbar = () => {
                     My Profile
                 </NavLink></li>
             )}
+            
         </>
     );
     
@@ -56,12 +58,14 @@ const Navbar = () => {
         <nav className="bg-white shadow-lg shadow-gray-100 sticky top-0 z-50 border-b border-gray-100">
             <div className="container mx-auto px-4 py-4 flex justify-between items-center">
                 
-                {/* ১. লোগো */}
-                <Link to="/" className="text-3xl font-extrabold text-violet-600 hover:text-violet-700 transition duration-300 tracking-wider">
-                    SkillSwap
+                <Link to="/" className="flex items-center space-x-2">
+                    <img src={siteLogo} alt="SkillSwap Logo" className="w-8 h-8"/> 
+                    <span className="text-3xl font-extrabold text-violet-600 hover:text-violet-700 transition duration-300 tracking-wider">
+                        SkillSwap
+                    </span>
                 </Link>
 
-                {/* ২. ডেস্কটপ মেনু (Hidden on small screens) */}
+                {/* ২. ডেস্কটপ মেনু */}
                 <ul className="hidden lg:flex items-center space-x-8 text-lg font-medium">
                     {navLinks}
                 </ul>
@@ -70,15 +74,13 @@ const Navbar = () => {
                 <div className="flex items-center space-x-4">
                     
                     {user ? (
-                        /* লগইন অবস্থায়: প্রোফাইল ছবি ও লগআউট */
                         <div className="flex items-center space-x-3">
-                            {/* প্রোফাইল Avatar (হোভার করলে নাম দেখাবে) */}
                             <div 
                                 className="relative group" 
                             >
                                 <img 
                                     className="w-10 h-10 rounded-full object-cover cursor-pointer border-2 border-violet-400 transition duration-200 hover:border-violet-600" 
-                                    src={user.photoURL || 'https://i.ibb.co/3k5f50y/default-avatar.png'}
+                                    src={user.photoURL || defaultAvatar}
                                     alt="User Profile" 
                                 />
                                 {/* Custom Tooltip */}
@@ -87,7 +89,6 @@ const Navbar = () => {
                                 </div>
                             </div>
 
-                            {/* লগআউট বোতাম */}
                             <button 
                                 onClick={handleLogOut} 
                                 className="px-4 py-2 text-sm bg-red-500 text-white rounded-lg hover:bg-red-600 transition duration-300 font-medium shadow-md"
@@ -96,7 +97,6 @@ const Navbar = () => {
                             </button>
                         </div>
                     ) : (
-                        /* লগ আউট অবস্থায়: লগইন ও সাইনআপ বোতাম */
                         <div className="space-x-3">
                             <Link to="/login" className="px-4 py-2 text-sm bg-violet-600 text-white rounded-lg hover:bg-violet-700 transition duration-300 font-medium shadow-md shadow-violet-200/50">
                                 Login
@@ -107,7 +107,6 @@ const Navbar = () => {
                         </div>
                     )}
                     
-                    {/* মোবাইল হ্যামবার্গার/ক্লোজ বোতাম */}
                     <button 
                         className="lg:hidden text-gray-700 text-2xl hover:text-violet-600 transition duration-300"
                         onClick={() => setIsOpen(!isOpen)}
@@ -116,7 +115,6 @@ const Navbar = () => {
                     </button>
                 </div>
 
-                {/* ৪. মোবাইল মেনু (Dropdown/Overlay) */}
                 <div className={`absolute top-[68px] left-0 w-full bg-white shadow-xl shadow-gray-200/50 lg:hidden transition-all duration-500 ${isOpen ? 'max-h-96 opacity-100 border-t border-gray-100' : 'max-h-0 opacity-0 overflow-hidden'}`}>
                     <ul className="flex flex-col items-start space-y-4 p-4 font-medium">
                         {navLinks}
