@@ -10,7 +10,7 @@ const Navbar = () => {
     const { user, logOut, loading } = useContext(AuthContext); 
     const [isOpen, setIsOpen] = useState(false); 
 
-    const defaultAvatar = 'https://i.ibb.co/3k5f50y/default-avatar.png';
+    const defaultAvatar = 'https://i.ibb.co.com/qYrhk6YS/codingx.png';
 
     const handleLogOut = () => {
         logOut()

@@ -1,0 +1,29 @@
+[
+  {
+    "id": 1,
+    "title": "Beginner's React Hook Workshop",
+    "date": "Nov 15, 2025",
+    "time": "10:00 AM - 12:00 PM (Online)",
+    "slots": "12 Slots Remaining",
+    "price": "499",
+    "image": "https://i.ibb.co.com/1Gm2mVfW/Gemini-Generated-Image-v2ezt5v2ezt5v2ez.png"
+  },
+  {
+    "id": 2,
+    "title": "Intermediate Guitar Chords & Rhythms",
+    "date": "Nov 22, 2025",
+    "time": "05:00 PM - 07:00 PM (In-Person)",
+    "slots": "8 Slots Remaining",
+    "price": "750",
+    "image": "https://i.ibb.co.com/bgLPFKYc/Gemini-Generated-Image-ttf16rttf16rttf1.png"
+  },
+  {
+    "id": 3,
+    "title": "Advanced SEO Strategy 2026",
+    "date": "Dec 01, 2025",
+    "time": "02:00 PM - 04:00 PM (Online)",
+    "slots": "15 Slots Remaining",
+    "price": "999",
+    "image": "https://i.ibb.co.com/M5N4FXfb/Gemini-Generated-Image-lypcr1lypcr1lypc.png"
+  }
+]

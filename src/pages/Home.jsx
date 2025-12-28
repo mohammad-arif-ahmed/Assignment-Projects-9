@@ -6,7 +6,8 @@ import providersData from "../assets/data/topProvider.json";
 import allSkills from "../assets/data/skills.json";
 import ProviderCard from '../components/ProviderCard';
 import { Link } from 'react-router-dom';
-
+import WorkshopCard from '../components/WorkshopCard';
+import workshopsData from "../assets/data/workshops.json";
 
 const Home = () => {
     const popularSkills = allSkills.slice(0, 3);
@@ -46,7 +47,6 @@ const Home = () => {
                 </h2>
                 <div className="bg-blue-50 p-6 rounded-lg text-gray-600">
                     <section className="my-8">
-                        <h2 className="text-3xl font-bold mb-8 text-center">⭐ Top Rated Providers</h2>
                         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
                             {providersData.map(provider => (
                                 <ProviderCard key={provider.id} provider={provider} />
@@ -74,6 +74,17 @@ const Home = () => {
                         <span className="text-xl font-bold text-violet-600">Step 3: Swap</span>
                         <p className="text-gray-600 mt-2">Learn, share, and rate your experience!</p>
                     </div>
+                </div>
+            </section>
+            <section className="my-12">
+                <div className="text-left mb-10">
+                    <h2 className="text-3xl font-bold mb-6 text-gray-800 border-b pb-2">🔜 Upcoming Workshops</h2>
+                </div>
+
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    {workshopsData.map(workshop => (
+                        <WorkshopCard key={workshop.id} workshop={workshop} />
+                    ))}
                 </div>
             </section>
 
