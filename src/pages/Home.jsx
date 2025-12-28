@@ -5,10 +5,11 @@ import SkillCard from '../components/SkillCard';
 import providersData from "../assets/data/topProvider.json";
 import allSkills from "../assets/data/skills.json";
 import ProviderCard from '../components/ProviderCard';
+import { Link } from 'react-router-dom';
 
 
 const Home = () => {
-    const popularSkills = allSkills.slice(0, 6);
+    const popularSkills = allSkills.slice(0, 3);
 
     return (
         <div className="container mx-auto px-4 py-8">
@@ -28,6 +29,13 @@ const Home = () => {
                         <SkillCard key={skill.skillId} skill={skill} />
                     ))}
 
+                </div>
+                <div className="mt-12 text-center">
+                    <Link to="/all-skills">
+                        <button className="btn btn-outline border-violet-600 text-violet-600 hover:bg-violet-600 hover:border-violet-600 px-8 rounded-full font-bold shadow-lg transition duration-300">
+                            See All Skills
+                        </button>
+                    </Link>
                 </div>
             </section>
 

@@ -7,6 +7,7 @@ import Signup from "../pages/Signup";
 import ErrorPage from "../pages/ErrorPage"; 
 import SkillDetails from "../pages/SkillDetails"; 
 import MyProfile from "../pages/MyProfile"; 
+import AllSkills from "../pages/AllSkills";
 
 import PrivateRoute from "./PrivateRoute";
 
@@ -19,6 +20,10 @@ const router = createBrowserRouter([
             {
                 path: "/",
                 element: <Home />
+            },
+            {
+                path: "/all-skills", 
+                element: <AllSkills />,
             },
             {
                 path: "/login",
