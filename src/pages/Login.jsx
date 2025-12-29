@@ -30,7 +30,7 @@ const Login = () => {
             .catch(error => {
                 console.error(error);
                 setLoginError("Invalid email or password. Please try again.");
-                toast.error("Login failed. Please Input Valied Email or Register First.");
+                toast.error("Login failed. Check Details.");
             });
     };
 

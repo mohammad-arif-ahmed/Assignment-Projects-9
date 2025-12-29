@@ -4,7 +4,6 @@ import { useContext, useState } from "react";
 import { AuthContext } from "../providers/AuthProvider"; 
 import toast from "react-hot-toast"; 
 import { FaBars, FaTimes } from 'react-icons/fa'; 
-import siteLogo from '../assets/logo.png'; 
 
 const Navbar = () => {
     const { user, logOut, loading } = useContext(AuthContext); 
@@ -58,12 +57,10 @@ const Navbar = () => {
         <nav className="bg-white shadow-lg shadow-gray-100 sticky top-0 z-50 border-b border-gray-100">
             <div className="container mx-auto px-4 py-4 flex justify-between items-center">
                 
-                <Link to="/" className="flex items-center space-x-2">
-                    <img src={siteLogo} alt="SkillSwap Logo" className="w-8 h-8"/> 
+                    
                     <span className="text-3xl font-extrabold text-violet-600 hover:text-violet-700 transition duration-300 tracking-wider">
                         SkillSwap
                     </span>
-                </Link>
 
                 {/* ২. ডেস্কটপ মেনু */}
                 <ul className="hidden lg:flex items-center space-x-8 text-lg font-medium">
