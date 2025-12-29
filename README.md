@@ -1,16 +1,27 @@
-# React + Vite
+# SkillSwap - Skill Sharing & Service Marketplace
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+SkillSwap is a professional service marketplace platform where users can discover, book, and learn various skills from expert providers.
 
-Currently, two official plugins are available:
+## 🚀 Live Link
+https://scintillating-duckanoo-2aa1d2.netlify.app/
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🛠️ Tech Stack
+- **Frontend:** React.js, Tailwind CSS, React Router
+- **Backend/Auth:** Firebase Authentication
+- **Animations:** AOS (Animate On Scroll)
+- **Notifications:** React Hot Toast
+- **Icons:** React Icons
 
-## React Compiler
+## ✨ Key Features
+- **Firebase Authentication:** Secure Google & Email/Password login.
+- **Dynamic Service Discovery:** Browse and search through various skills.
+- **Interactive Booking System:** Modal-based booking form for seamless user experience.
+- **Upcoming Workshops:** Group learning sessions with real-time registration.
+- **Responsive Design:** Fully optimized for mobile, tablet, and desktop views.
+- **AOS Animations:** Smooth scroll animations throughout the application.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 📦 Installation & Setup
 
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/mohammad-arif-ahmed/Assignment-Projects-9.git
